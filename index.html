@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Guru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Menghubungkan ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Elemen Latar Belakang -->
+  <div class="bg-circle circle-1"></div>
+  <div class="bg-circle circle-2"></div>
+
+  <!-- Audio Latar (Ganti src dengan link atau nama file MP3 Anda) -->
+  <audio id="bgMusic" loop>
+    <source src="Hymne Guru - Lirik Lagu Nasional Indonesia.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Tombol Putar / Jeda Musik -->
+  <button class="music-control" id="musicBtn" aria-label="Putar atau Jeda Musik">
+    <span class="music-icon" id="musicIcon">▶</span>
+    <span id="musicText">Putar Musik</span>
+  </button>
+
+  <!-- Tahap 1: Amplop Interaktif -->
+  <div class="envelope-stage" id="envelopeStage">
+    <div class="envelope-wrapper" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="letter-preview">
+        <h3>Selamat Hari Guru</h3>
+        <p>Dibacanya harus serius ya...</p>
+      </div>
+      <div class="envelope-pocket">
+        <div class="pocket-left"></div>
+        <div class="pocket-right"></div>
+        <div class="pocket-bottom"></div>
+      </div>
+      <div class="envelope-flap"></div>
+      <div class="wax-seal">❤</div>
+    </div>
+    <p class="tap-hint">Dibuka amplopnya jangan di liat doang ya ka...</p>
+  </div>
+
+  <!-- Tahap 2: Isi Kartu Ucapan -->
+  <main class="card-container" id="greetingCard">
+    <span class="badge-date">25 November • Hari Guru Nasional</span>
+    <h1 class="card-title">Selamat Hari Guru bu Eliza</h1>
+
+    <!-- Ganti URL gambar di bawah ini dengan foto guru Anda -->
+    <div class="photo-frame">
+      <img src="El.jpeg" alt="Foto Guru">
+    </div>
+
+    <!-- Ganti Nama & Jabatan Guru di sini -->
+    <h2 class="teacher-name">[Eliza Rahayu S.Pd]</h2>
+    <p class="teacher-role">Wali Kelas &amp; Guru Galak tapi baik kok</p>
+
+    <div class="divider"></div>
+
+    <div class="message-body">
+      <p>
+        Hallo ka, selamat hari guru ya untuk guru gen z ku, btw makasih udah mau bertahan sampe sekarang dan selalu sabar menghadapi anak".
+      </p>
+      <p>
+        makasih ya karena udh mau berusaha menjadi guru terbaik, walaupun terkadang bikin kesel dan pusing. sehat selalu ya, biar bisa ngopi setiap hari, wkwkwk.       
+    </p>
+    </div>
+
+    <div class="signature">
+      -Orang Keren-,<br>
+      <strong><div Orang="" Keren=""></div></strong>
+    </div>
+
+    <button class="btn-close-card" id="closeCardBtn">Tutup Amplop</button>
+  </main>
+
+  <!-- Menghubungkan ke file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
